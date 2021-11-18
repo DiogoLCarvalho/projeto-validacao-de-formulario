@@ -1,0 +1,7 @@
+/* Formulario */
+#formulario__page{
+    width: 50vw;
+    max-height: 800px;
+    min-height: 300px;
+    margin: 0 auto;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Validação de Formulário</title>
+</head>
+
+<body>
+    <section id="contact">
+        <h1 id="contact__title">Contate-Nos</h1>
+        <picture>
+            <source media="(max-width: 799px)" srcset="img/icon300.png">
+            <source media="(max-width: 1300px)" srcset="img/icon500.png">
+            <img src="img/icon.png" id="contact__icon" alt="https://iconscout.com/illustration/about-us-2061897">
+        </picture>
+    </section>
+
+    <main id="formulario__page">
+        <h1>Formulário</h1>
+
+        <div>
+            <span>Primeiro nome</span>
+            <input type="text" name="FirstName">
+        </div>
+
+        <div>
+            <span>Último nome</span>
+            <input type="text" name="LastName">
+        </div>
+
+        <div>
+            <span>Senha</span>
+            <input type="password" name="password">
+        </div>
+
+        <div>
+            <span>Confirmar Senha</span>
+            <input type="password" name="ConfirmPassword">
+        </div>
+
+        <div>
+            <span>Gênero</span>
+            <select>
+                <option value=""> </option>
+                <option value="Masculino">Masculino </option>
+                <option value="Feminino">Feminino </option>
+            </select>
+        </div>
+
+        <div>
+            <span>Email</span>
+            <input type="email" name="Email">
+        </div>
+
+        <div>
+            <span>Telefone</span>
+            <input type="tel" name="number">
+        </div>
+
+        <div>
+            <span>Escreva alguma mensagem</span>
+            <textarea name="mensage" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">Aceito os termos e condições</label>
+        </div>
+
+        <div>
+            <button>Enviar</button>
+        </div>
+
+    </main>
+
+    <footer id="footer">
+        <section id="footer__content">
+            <h3>Entre em contato</h3>
+            <ul id="content__ul">
+                <li>
+                    <a href="https://github.com/DiogoLCarvalho" target="_blanked">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>
+            <p>&#169;2021 - Diogo Lima Carvalho</p>
+            <p>diogo.carvalho.lc@gmail.com</p>
+        </section>
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
