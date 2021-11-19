@@ -13,6 +13,12 @@
     box-sizing: border-box;
     font-family: 'Ubuntu Mono', monospace;
 }
+body{
+    background-image: url('../img/wave2.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
 /* Contact */
 #contact{
     max-width: 100%;
