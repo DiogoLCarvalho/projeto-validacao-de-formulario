@@ -181,3 +181,44 @@ label[for='checkbox']{
     color: var(--colorOne);
     margin-right: 5px;
 }
+
+@media (max-width:1010px) {
+    #formulario__page {
+        width: 90vw;
+    }
+    /* Footer */
+    #footer__content {
+        padding: 10px 20px 0px;
+    }
+}
+@media (max-width:640px) {
+    #formulario__page {
+        width: 92vw;
+        padding: 10px;
+        gap: 30px;
+    }
+    #formulario__page h1{
+        font-size: 1.7em;
+    }
+    .form__label,.form__input, #textarea,#btn,#required,#select select   {
+        font-size: 1em;
+    }
+    #textarea{
+        max-height: 140px;
+        min-height: 100px;
+    }
+    #btn{
+        width: 30%;
+        height: 40px;
+    }
+    .checkmark{
+        width: 15px;
+        height: 15px;
+    }
+    .checkmark:before{
+        content: "";
+        top: 0px;
+        left: 0px;
+        width: 5px;
+    }
+}
