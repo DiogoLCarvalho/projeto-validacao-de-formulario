@@ -20,71 +20,91 @@
     </section>
 
     <main id="formulario__page">
-        <h1>Formulário</h1>
+        <form action="#" id="form">
+            <h1>Formulário</h1>
 
-        <div id="FirstName">
-            <span class="form__label"><span class="asterisk">*</span>Primeiro nome</span>
-            <input type="text" name="FirstName" class="form__input">
-        </div>
-
-        <div id="LastName">
-            <span class="form__label">Último nome</span>
-            <input type="text" name="LastName" class="form__input">
-        </div>
-
-        <div>
-            <span class="form__label"><span class="asterisk">*</span>Senha</span>
-            <input type="password" name="password" class="form__input">
-        </div>
-
-        <div>
-            <span class="form__label"><span class="asterisk">*</span>Confirmar Senha</span>
-            <input type="password" name="ConfirmPassword" class="form__input">
-        </div>
-        
-        <div id="form__select">
-            <span class="form__label">Gênero</span>
-            <div id="select">
-                <select>
-                    <option value=""> </option>
-                    <option value="Masculino">Masculino </option>
-                    <option value="Feminino">Feminino </option>
-                    <option value="Ninformar">Não informar </option>
-                </select>
+            <div id="FirstName" class="form__div">
+                <span class="form__label"><span class="asterisk">*</span>Primeiro nome</span>
+                <input type="text" name="FirstName" class="form__input " id="firstName">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
             </div>
-        </div>
 
-        <div>
-            <span class="form__label"><span class="asterisk">*</span>Email</span>
-            <input type="email" name="Email" class="form__input"  placeholder="exemplo@gmail.com">
-        </div>
+            <div id="LastName" class="form__div">
+                <span class="form__label"><span class="asterisk">*</span>Último nome</span>
+                <input type="text" name="LastName" class="form__input" id="lastName">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
 
-        <div>
-            <span class="form__label">Telefone</span>
-            <input type="tel" name="number" class="form__input"  placeholder="4002-8922">
-        </div>
+            <div class="form__div">
+                <span class="form__label"><span class="asterisk">*</span>Senha</span>
+                <input type="password" name="password" class="form__input" id="password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
 
-        <div id="form__textarea">
-            <span class="form__label">Escreva alguma mensagem</span>
-            <textarea name="mensage" cols="30" rows="10" id="textarea" placeholder="Escreve algo aqui..."></textarea>
-        </div>
 
-        <div id="form__check">
-            <label>
-                <input type="checkbox" name="checkbox" id="checkbox">
-                <span class="checkmark"></span>
-            </label>
+            <div class="form__div">
+                <span class="form__label"><span class="asterisk">*</span>Confirmar Senha</span>
+                <input type="password" name="ConfirmPassword" class="form__input" id="confirmPassword">
+                <span id="erro__mensage">As senhas tem que ser <b>iguais</b></span>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+            
+            <div id="form__select" >
+                <span class="form__label"><span class="asterisk">*</span>Gênero</span>
+                <div id="select">
+                    <select id="form__genre">
+                        <option value=""> </option>
+                        <option value="Masculino">Masculino </option>
+                        <option value="Feminino">Feminino </option>
+                        <option value="Ninformar">Não informar </option>
+                    </select>
+                </div>
+            </div>
 
-            <label for="checkbox" class="form__label"><span class="asterisk">*</span>Aceito os termos e condições</label>
-        </div>
 
-        <div id="form__btn">
-            <button id="btn">Enviar</button>
-        </div>
+            <div class="form__div">
+                <span class="form__label"><span class="asterisk">*</span>Email</span>
+                <input type="email" name="Email" class="form__input"  placeholder="exemplo@gmail.com" id="email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
 
-        <div id="form__required">
-            <p id="required"><span class="asterisk">*</span> Campos obrigatórios</p>
-        </div>
+
+            <div  class="form__div">
+                <span class="form__label"><span class="asterisk">*</span>Telefone</span>
+                <input type="tel" name="number" class="form__input"  placeholder="40028922 = apenas o número" id="fone">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+
+
+            <div id="form__textarea">
+                <span class="form__label">Escreva alguma mensagem</span>
+                <textarea name="mensage" cols="30" rows="10" id="textarea" placeholder="Escreve algo aqui..."></textarea>
+            </div>
+
+
+            <div id="form__check">
+                <label>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label for="checkbox" class="form__label"><span class="asterisk">*</span>Aceito os termos e condições</label>
+                <span id="error__check">O termo precisa ser aceito</span>
+            </div>
+
+            <div id="form__btn">
+                <button id="btn">Enviar</button>
+            </div>
+
+            <div id="form__required">
+                <p id="required"><span class="asterisk">*</span> Campos obrigatórios</p>
+            </div>
+        </form>
     </main>
 
     <footer id="footer">
@@ -110,6 +130,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

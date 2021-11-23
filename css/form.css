@@ -5,41 +5,51 @@
     min-height: min-content;
     margin: 0 auto;
     box-shadow: 0 0 18px 0 rgb(0 0 0 / 20%);
-    padding: 20px 50px ;
-    display: grid;
-    grid-template-areas: 
-    "title title"
-    "input01 input02"
-    "input03 input04"
-    "input05 input05"
-    "input06 input07"
-    "input08 input08"
-    "input09 input09"
-    "input10 input10"
-    "input11 input11";
-    gap: 50px;
+    padding: 20px 50px;
     background-color: var(--colorThree);
 }
-#formulario__page >div{
+
+#form {
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "input01 input02"
+        "input03 input04"
+        "input05 input05"
+        "input06 input07"
+        "input08 input08"
+        "input09 input09"
+        "input10 input10"
+        "input11 input11";
+    gap: 50px;
+}
+
+#formulario__page>div {
     height: 100%;
 }
-#formulario__page h1{
+
+#formulario__page h1 {
     font-weight: 700;
     font-size: 2.2em;
     grid-area: title;
 }
-#form__select{
+
+#form__select {
     grid-area: input05;
 }
-#form__textarea{
+
+#form__textarea {
     grid-area: input08;
 }
-#form__check{
+
+#form__check {
     grid-area: input09;
 }
-#form__btn{
+
+#form__btn {
     grid-area: input10;
 }
+
 .form__input, #textarea {
     outline: none;
     width: 100%;
@@ -93,7 +103,7 @@
     border: 8px solid;
     border-color: var(--colorTwo) transparent transparent transparent;
     pointer-events: none;
-    
+
 }
 
 
@@ -119,6 +129,7 @@
     display: block;
     margin: 0 auto;
 }
+
 #btn:hover {
     background: linear-gradient(100deg, #0B4870, #3d8cc0);
     transform: scale(1.02);
@@ -126,21 +137,22 @@
 
 
 /* checkbox */
-#checkbox{
+#checkbox {
     position: absolute;
     opacity: 0;
 }
 
-.checkmark{
+.checkmark {
     width: 20px;
     height: 20px;
-    border: 2.5px  solid var(--colorTwo);
+    border: 2.5px solid var(--colorTwo);
     display: inline-block;
     position: relative;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
-.checkmark:before{
+
+.checkmark:before {
     content: "";
     position: absolute;
     top: 3px;
@@ -151,16 +163,20 @@
     border-color: transparent;
     transform: rotate(-45deg);
 }
-#checkbox:checked ~ .checkmark:before{
+
+#checkbox:checked~.checkmark:before {
     border-color: transparent transparent #fff #fff;
 }
-#checkbox:checked ~ .checkmark{
-    background:  var(--colorTwo);
+
+#checkbox:checked~.checkmark {
+    background: var(--colorTwo);
 }
-label[for='checkbox']{
+
+label[for='checkbox'] {
     cursor: pointer;
 }
-#form__required{
+
+#form__required {
     width: 100%;
     text-align: right;
     grid-area: input11;
@@ -168,57 +184,144 @@ label[for='checkbox']{
     align-items: center;
     justify-content: flex-end;
 }
-#required{
+
+#required {
     font-size: 1.2em;
     color: var(--colorTwo);
 }
-#required span{
+
+#required span {
     color: var(--colorOne);
     font-weight: 700;
     font-size: 1.3em;
 }
-.asterisk{
+
+.asterisk {
     color: var(--colorOne);
     margin-right: 5px;
 }
 
-@media (max-width:1010px) {
+/* Sucess - Error */
+.sucess {
+    border-color: #2ecc71;
+}
+
+.error {
+    border-color: #e74c3c;
+}
+
+.form__div {
+    position: relative;
+    z-index: 0;
+}
+
+.fas {
+    position: absolute;
+    top: 60%;
+    left: 90%;
+    z-index: 99;
+}
+
+.fa-check-circle {
+    color: #2ecc71;
+    visibility: hidden;
+}
+
+.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: hidden;
+}
+
+/* if sucess and error icon */
+.form__div input.sucess~i.fa-check-circle {
+    visibility: visible;
+}
+
+.form__div input.error~i.fa-exclamation-circle {
+    visibility: visible;
+}
+
+/* erro senha */
+#erro__mensage {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #e74c3c;
+    visibility: hidden;
+}
+
+.form__div input#confirmPassword.error~span#erro__mensage {
+    visibility: visible;
+}
+
+/* error termos */
+#error__check {
+    display: block;
+    color: #e74c3c;
+    font-weight: 900;
+    visibility: hidden;
+}
+
+
+@media (max-width:1050px) {
     #formulario__page {
         width: 90vw;
     }
+
+    .form__label, .form__input, #textarea, #btn, #required, #select select {
+        font-size: 1em;
+    }
+
     /* Footer */
     #footer__content {
         padding: 10px 20px 0px;
     }
 }
+
 @media (max-width:640px) {
     #formulario__page {
         width: 92vw;
         padding: 10px;
         gap: 30px;
     }
-    #formulario__page h1{
+
+    #formulario__page h1 {
         font-size: 1.7em;
     }
-    .form__label,.form__input, #textarea,#btn,#required,#select select   {
+
+    .form__label, .form__input, #textarea, #btn, #required, #select select {
         font-size: 1em;
     }
-    #textarea{
+
+    #textarea {
         max-height: 140px;
         min-height: 100px;
     }
-    #btn{
+
+    #btn {
         width: 30%;
         height: 40px;
     }
-    .checkmark{
+
+    .checkmark {
         width: 15px;
         height: 15px;
     }
-    .checkmark:before{
+
+    .checkmark:before {
         content: "";
         top: 0px;
         left: 0px;
         width: 5px;
+    }
+
+    .fas {
+        position: absolute;
+        top: 54%;
+        left: 85%;
+        z-index: 99;
+    }
+    #erro__mensage,#error__check{
+        font-size: .8em;
     }
 }
