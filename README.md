@@ -34,6 +34,23 @@ Essas classes criam efeitos de erro e sucesso respectivamentes:
 
 <p align="justify">
 
+Existem outros tipos de verificação de acordo com o necessário, como a senha que verifica se uma é igual a outra, ou a verificação do gênero que apenas muda a cor da borda, sem adicionar uma classe. Em especial, a verificação do email tem uma função especial. 
+
 </p>
 
+![Captura de tela 2021-11-25 112123](https://user-images.githubusercontent.com/84794798/143458244-c1ee8f8e-2e9e-430d-b69b-7078897b1357.png)
 
+<p align="justify">
+A função <i>isEmail</i> é um <b>regex</b> que verifica o email. 
+</p>
+
+![Captura de tela 2021-11-25 112741](https://user-images.githubusercontent.com/84794798/143458989-742fbe90-090b-4eff-bf5c-b8c2d65d165e.png)
+
+### Detalhes a mencionar :exclamation:
+
+<p align="justify">
+Ainda tem a verificação do telefone - que verifica se é um número e se é maior que oito dígitos - e o botão de checagem - que apenas verifica se o botão está <i>checked</i> ou não - 
+</p>
+
+## Obrigado pela atenção :exclamation:
+* Criado por <a href="https://github.com/DiogoLCarvalho" target="_blank">Diogo Lima Carvalho</a>. 
