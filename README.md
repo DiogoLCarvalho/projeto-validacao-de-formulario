@@ -53,4 +53,4 @@ Ainda tem a verificação do telefone - que verifica se é um número e se é ma
 </p>
 
 ## Obrigado pela atenção :exclamation:
-* Criado por <a href="https://github.com/DiogoLCarvalho" target="_blank">Diogo Lima Carvalho</a>. 
+* Criado por <a href="https://github.com/DiogoLCarvalho"  target="_blanked">Diogo Lima Carvalho</a>. 
