@@ -17,13 +17,13 @@ form.addEventListener('submit',(e)=>{
 
 function verificarDados() {
     // Pegar valores
-    const firstNameValue = formFirstName.value.trim()
-    const lastNameValue = formLastName.value.trim()
-    const passwordeValue = formPassword.value.trim()
-    const confirmPasswordValue = formConfirmPassword.value.trim()
-    const genreValue = formGenre.value
-    const emailValue = formEmail.value
-    const foneValue = formFone.value
+    const firstNameValue = formFirstName.value.trim();
+    const lastNameValue = formLastName.value.trim();
+    const passwordeValue = formPassword.value.trim();
+    const confirmPasswordValue = formConfirmPassword.value.trim();
+    const genreValue = formGenre.value;
+    const emailValue = formEmail.value;
+    const foneValue = formFone.value;
 
 
 
@@ -100,6 +100,7 @@ function jogarErro(input) {
 function jogarSucesso(input) {
     input.className = 'form__input sucess';
 }
+
 function isEmail(email) {
     // isso é um regex q veriica o email
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
